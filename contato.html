@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delta Team - Contato</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contato.css">
+</head>
+
+<body class="flex animate-in">
+
+    <main id="contato">
+
+        <div class="header panel flex">
+            <h1>Contato</h1>
+            <a class="link-back" href="./index.html">Voltar</a>
+        </div>
+
+        <div class="contato1 panel flex">
+            <h2>Guilherme Aguiar</h2>
+            <a class="link-cursor" href="https://codepen.io/guiguetz" target="_blank">Codepen</a>
+            <a class="link-cursor" href="https://github.com/guiguetz" target="_blank">Github</a>
+            <a class="link-cursor" href="https://twitter.com/npmGuilherme" target="_blank">Twitter</a>
+            <a class="link-cursor" href="https://api.whatsapp.com/send?phone=5513992025755&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20contato%20ap%C3%B3s%20visitar%20seu%20site%20do%20projeto%20orientado!" target="_blank">Whatsapp</a>
+            <hr>
+            <h3>contato via eMail</h3>
+
+            <!-- Sem method/action pra evitar redirecionamento para pagina quebrada -->
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" placeholder="Jason Voorhees" required>
+
+                <label for="telephone">Telefone:</label>
+                <input id="tel" oninput="updateMask(this.value)" type="text" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(13)6666-1234" required>
+
+                <label for="name">Email:</label>
+                <input type="email" name="_replyto" placeholder="jason@friday.com" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="contato2 panel flex">
+            <h2>Irianne Sedky</h2>
+            <a class="link-cursor" href="https://fb.com/yukisaragi" target="_blank">Facebook</a>
+            <a class="link-cursor" href="https://instagram.com/yukisaragi" target="_blank">Instagram</a>
+            <a class="link-cursor" href="https://twitter.com/yu_kisaragi" target="_blank">Twitter</a>
+            <a class="link-cursor" href="https://api.whatsapp.com/send?phone=5513991829433&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20contato%20ap%C3%B3s%20visitar%20seu%20site%20do%20projeto%20orientado!" target="_blank">Whatsapp</a>
+            <hr>
+            <h3>contato via eMail</h3>
+
+            <!-- Sem method/action pra evitar redirecionamento para pagina quebrada -->
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" placeholder="Squall Leonheart" required>
+
+                <label for="telephone">Telefone:</label>
+                <input id="tel" oninput="updateMask(this.value)" type="text" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(13)6666-1234" required>
+
+                <label for="name">Email:</label>
+                <input type="email" name="_replyto" placeholder="squall@gunblade.com" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script>
+        let el = document.getElementById("tel");
+
+        function updateMask(v) {
+            v = v.replace(/\D/g, "");
+            v = v.replace(/^(\d{2})(\d)/g, "($1) $2");
+            v = v.replace(/(\d)(\d{4})$/, "$1-$2");
+            el.value = v;
+        }
+
+    </script>
+</body>
+
+</html>

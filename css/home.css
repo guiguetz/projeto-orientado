@@ -1,0 +1,56 @@
+#home {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header  header  header  header  header  header"
+        "person1 person1 person1 person1 person1 sidemenu"
+        "person1 person1 person1 person1 person1 sidemenu"
+        "person1 person1 person1 person1 person1 sidemenu"
+        "person2 person2 person2 person2 person2 sidemenu"
+        "person2 person2 person2 person2 person2 sidemenu"
+        "person2 person2 person2 person2 person2 sidemenu"
+}
+
+#home .header {
+    grid-area: header;
+}
+
+#home .person1 {
+    grid-area: person1;
+}
+
+#home .person2 {
+    grid-area: person2;
+}
+
+#home .sidemenu {
+    grid-area: sidemenu;
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5em;
+}
+
+#home > a > .person1 > *,
+#home > a > .person2 > * {
+    width: 30%;
+}
+
+#home li {
+    line-height: 1.5em;
+}
+
+#home p {
+    font-size: 1.2em
+}
+
+#home a.person1,
+#home a.person2 {
+    display: contents;
+}
+
+#home a.person1:hover *,
+#home a.person2:hover * {
+    background-color: rgba(0, 34, 101, 1);
+}

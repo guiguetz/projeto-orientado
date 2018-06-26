@@ -1,0 +1,23 @@
+#sobre {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "sobre"
+        "sobre"
+        "sobre"
+        "sobre"
+        "sobre"
+}
+
+#sobre .header {
+    grid-area: header;
+}
+
+#sobre .content {
+    grid-area: sobre;
+    flex-direction: column;
+    text-transform: none;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delta Team - Projeto Orientado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body class="flex animate-in">
+
+    <main id="home">
+        <div class="header panel flex">
+            <h1>Delta Team</h1>
+        </div>
+
+        <a class="person1" href="./guilherme.html">
+            <div class="person1 panel flex">
+                <div>
+                    <p>Guilherme Aguiar</p>
+                    <p>LVL 24</p>
+                    <p>HP 785/800</p>
+                    <p>MP 655/720</p>
+                </div>
+                <div>
+                    <p>Classe:</p>
+                    <p>Bardo</p>
+                    <p>Status:</p>
+                    <p>Sono</p>
+                </div>
+                <div class="flex">
+                    <img src="./images/gui-master-system.png" alt="Avatar de Guilherme Aguiar">
+                </div>
+            </div>
+        </a>
+
+        <a class="person2" href="./irianne.html">
+            <div class="person2 panel flex">
+                <div>
+                    <p>Irianne Sedky</p>
+                    <p>LVL 24</p>
+                    <p>HP 600/600</p>
+                    <p>MP 723/740</p>
+                </div>
+                <div>
+                    <p>Classe:</p>
+                    <p>Doppelganger</p>
+                    <p>Status:</p>
+                    <p>Gripe</p>
+                </div>
+                <div class="flex">
+                    <img src="./images/yu-master-system.png" alt="Avatar de Irianne Sedky">
+                </div>
+            </div>
+        </a>
+        <div class="sidemenu panel flex">
+            <ul>
+                <li><a class="link-cursor" href="sobre.html">A dupla</a></li>
+                <li><a class="link-cursor" href="itens.html">Itens</a></li>
+                <li><a class="link-cursor" href="musicas.html">Músicas</a></li>
+                <li><a class="link-cursor" href="portifolio.html">Portifólios</a></li>
+                <li><a class="link-cursor" href="configs.html">Configurações</a></li>
+            </ul>
+            <ul>
+                <li><a class="link-cursor" href="game.html">Aventure-se!</a></li>
+                <li><a class="link-cursor" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script>
+        Array.prototype.remove = function(from, to) {
+            var rest = this.slice((to || from) + 1 || this.length);
+            this.length = from < 0 ? this.length + from : from;
+            return this.push.apply(this, rest);
+        };
+    </script>
+</body>
+
+</html>

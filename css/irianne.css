@@ -1,0 +1,36 @@
+#person2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "irianne"
+        "irianne"
+        "bio"
+        "bio"
+}
+
+#person2 .header {
+    grid-area: header;
+}
+
+#person2 .irianne {
+    grid-area: irianne;
+}
+
+#person2 .irianne > div {
+    width: 30%;
+}
+
+#person2 .bio > div {
+    width: 40%;
+    line-height: 1.6em
+}
+
+#person2 .bio {
+    grid-area: bio;
+    justify-content: space-around
+}
+
+#person2 .stats > div {
+    margin: 0 15px;
+}

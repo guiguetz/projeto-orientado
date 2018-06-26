@@ -1,0 +1,20 @@
+#game {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "game"
+        "game"
+        "game"
+        "game"
+        "game"
+}
+
+#game .header {
+    grid-area: header;
+}
+
+#game .content {
+    grid-area: game;
+    flex-direction: column;
+}

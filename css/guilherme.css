@@ -1,0 +1,36 @@
+#person1 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "guilherme"
+        "guilherme"
+        "bio"
+        "bio"
+}
+
+#person1 .header {
+    grid-area: header;
+}
+
+#person1 .guilherme {
+    grid-area: guilherme;
+}
+
+#person1 .guilherme > div {
+    width: 30%;
+}
+
+#person1 .bio > div {
+    width: 40%;
+    line-height: 1.6em
+}
+
+#person1 .bio {
+    grid-area: bio;
+    justify-content: space-around
+}
+
+#person1 .stats > div {
+    margin: 0 15px;
+}

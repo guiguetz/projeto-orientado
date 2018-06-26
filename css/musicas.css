@@ -1,0 +1,31 @@
+#musicas {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header   header"
+        "musicas1 musicas2"
+        "musicas1 musicas2"
+        "musicas1 musicas2"
+        "musicas1 musicas2"
+        "musicas1 musicas2"
+}
+
+#musicas .header {
+    grid-area: header;
+}
+
+#musicas .musicas1 {
+    grid-area: musicas1;
+    flex-direction: column;
+}
+
+#musicas .musicas2 {
+    grid-area: musicas2;
+    flex-direction: column;
+}
+
+#musicas .musicas1, #musicas .musicas2 {
+    padding: 0 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}

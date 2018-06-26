@@ -1,0 +1,31 @@
+#configs {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "configs"
+        "configs"
+        "configs"
+        "configs"
+        "configs"
+}
+
+#configs .header {
+    grid-area: header;
+}
+
+#configs .content {
+    grid-area: configs;
+    font-size: 1.3em;
+}
+
+#configs .content > div:first-child {
+    text-align: right;
+    padding-right: 5px;
+    width: 50%;
+}
+#configs .content > div:last-child {
+    text-align: left;
+    padding-left: 5px;
+    width: 50%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delta Team - Configurações</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/configs.css">
+</head>
+
+<body class="flex animate-in">
+
+    <main id="configs">
+
+        <div class="header panel flex">
+            <h1>Configurações</h1>
+            <a class="link-back" href="./index.html">Voltar</a>
+        </div>
+
+        <div class="content panel flex">
+            <div>
+                <p>Controle</p>
+                <p>Dificuldade</p>
+                <p>Batalha</p>
+                <p>Curso</p>
+                <p>Ciclo</p>
+                <p>Período</p>
+                <p onclick="cycle()">Matéria</p>
+                <p onclick="cycle()">Professor</p>
+            </div>
+            <div>
+                <p>Customizado</p>
+                <p>Segura na mão de deus e vai</p>
+                <p>Automático</p>
+                <p>Sistemas para Internet</p>
+                <p>Primeiro</p>
+                <p>Manhã</p>
+                <p id="course-name" onclick="cycle()"></p>
+                <p id="teacher-name" onclick="cycle()"></p>
+            </div>
+        </div>
+
+    </main>
+    <script src="./js/script.js"></script>
+    <script>
+        let data = [
+            {
+                course: "ISW-005",
+                teacher: "Alexandre Sobrino",
+            },
+            {
+                course: "ISW-003",
+                teacher: "Rosemeire Vidal"
+            },
+            {
+                course: "ISW-004",
+                teacher: "Luiz Alexandre"
+            }
+        ];
+        let currentIndex = 0;
+        
+        function cycle() {
+            currentIndex = currentIndex == data.length ? 0 : currentIndex;
+            document.getElementById("course-name").innerHTML = data[currentIndex].course;
+            document.getElementById("teacher-name").innerHTML = data[currentIndex].teacher;
+            currentIndex++;
+        }
+        
+        cycle();
+    </script>
+</body>
+
+</html>

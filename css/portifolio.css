@@ -1,0 +1,56 @@
+#portifolio {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header"
+        "portifolio1 portifolio2"
+        "portifolio1 portifolio2"
+        "portifolio1 portifolio2"
+        "portifolio1 portifolio2"
+        "portifolio1 portifolio2"
+}
+
+#portifolio .header {
+    grid-area: header;
+}
+
+#portifolio .portifolio1 {
+    grid-area: portifolio1;
+}
+
+#portifolio .portifolio2 {
+    grid-area: portifolio2;
+}
+
+#portifolio .portifolio1,
+#portifolio .portifolio2 {
+    flex-direction: column;
+}
+
+#portifolio hr {
+    width: 60%;
+}
+
+#portifolio .portifolio1 a,
+#portifolio .portifolio2 a {
+    font-size: 1.5em;
+}
+
+#portifolio .portifolio1,
+#portifolio .portifolio2 {
+    flex-wrap: wrap;
+}
+
+#portifolio .portifolio1 > .flex,
+#portifolio .portifolio2 > .flex {
+    flex-direction: column;
+}
+
+.img-portifolio {
+    height: 200px;
+    width: auto;
+}
+
+.img-portifolio ~ p {
+    text-align: center;
+}
